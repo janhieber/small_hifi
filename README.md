@@ -24,9 +24,12 @@ the amp directly. The master box provides the signal.
 Master box should have a mono stand-alone mode.  
 
 # Technical
-Please look in the folders for the system components.
+- [The box](box/)
+- [The class D amplifier](classd_amp/)
+- [The DSP input board](dsp_input/)
 
 # Contributing
 We have some good knowledge on making this real, but of course we don't know anything
 and we don't want to spend years making this perfect. So if you want to contribute, feel
 free to contact us.
+
