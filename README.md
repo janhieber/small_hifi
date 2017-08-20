@@ -1,13 +1,13 @@
 # About
 This project is about creating a small HiFi audio system.
 
-We intend to build a two way stereo system (2 boxes with each 2 speakers)
-with small measurement (about 20 cm height, 15 cm width and depth).  
-The systems purpose is providing good audio quality in smaller rooms. The speakers
-can be places on a desk besides the computer screen for example.
+We intend to build a two way stereo system (2 boxes, each 2 speakers)
+with small size (about 20 cm height, 15 cm width and depth).
 
+The systems purpose is providing good audio quality in small rooms.
+The speakers can be places on a desk besides the computer screen for example.
 
-# System design
+# System design and architecture
 There will be a master and a slave box.
 
 Master box:
@@ -30,6 +30,14 @@ Edit ``system_architecture.xml`` on [draw.io](https://www.draw.io/)
 - [The box](box/)
 - [The class D amplifier](classd_amp/)
 - [The DSP input board](dsp_input/)
+
+# Tools
+We try to use free tools when possible.
+
+- ECAD: [KiCAD](http://kicad-pcb.org/)
+- CAD: [FreeCAD](https://www.freecadweb.org/)
+- Drawings/charts: [draw.io](https://www.draw.io/)
+
 
 # Contributing
 We have some good knowledge on making this real, but of course we don't know anything
