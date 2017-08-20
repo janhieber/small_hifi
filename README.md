@@ -23,6 +23,9 @@ the amp directly. The master box provides the signal.
 
 Master box should have a mono stand-alone mode.  
 
+![system architecture](https://raw.githubusercontent.com/janhieber/small_hifi/master/system_architecture.png)
+Edit ``system_architecture.xml`` on [draw.io](https://www.draw.io/)
+
 # Technical
 - [The box](box/)
 - [The class D amplifier](classd_amp/)
