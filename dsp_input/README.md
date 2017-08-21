@@ -1,6 +1,9 @@
 # About
 This is the DSP/control board.  
 
+Hardware desig files are here, [firmware](firmware/) is
+in subfolder.
+
 # Technical
 - Audio source
   - Analog stereo input with 3.5 mm jack + good ADC
