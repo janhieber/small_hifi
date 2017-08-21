@@ -51,8 +51,10 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-
-
 GTAGS
 GRTAGS
 GPATH
+
+# KiCAD baks
+*.bak
+*.kicad_pcb-bak
