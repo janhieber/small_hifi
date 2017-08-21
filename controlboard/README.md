@@ -57,6 +57,8 @@ STM32H7 as DSP:
 - DAC: [TI PCM5102](http://www.ti.com/lit/ds/symlink/pcm5101.pdf)
 - Volume control: [TI PGA2311](http://www.ti.com/lit/ds/symlink/pga2311.pdf)
 
+I think we don't need a display, because there is not much info to show.
+If we decide to use one, we could go with this: [Winstar OLED 64x32](http://www.winstar.com.tw/products/oled-module/graphic-oled-display/micro.html)
 
 [https://www.hobbyhifiladen.de/aktivmodule-dsp/sure-electronics/?p=4](https://www.hobbyhifiladen.de/aktivmodule-dsp/sure-electronics/?p=4)
 

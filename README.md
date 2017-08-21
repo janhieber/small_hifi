@@ -27,9 +27,9 @@ slave is not present.
 Edit ``system_architecture.xml`` on [draw.io](https://www.draw.io/)
 
 # Technical
-- [The box](box/)
-- [The class D amplifier](classd_amp/)
-- [The DSP input board](dsp_input/)
+- [Mainboard](controlboard/)
+- [Class D amplifier](amplifier/)
+- [Box](box/)
 
 # Tools
 We try to use free tools when possible.
