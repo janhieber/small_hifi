@@ -21,7 +21,7 @@ Master box provides the ready to use audio signal and
 a data link for slave via SPDIF.
 
 Master box should run in mono mode when
-slave is not present.  
+slave is not present.
 
 ![system architecture](https://raw.githubusercontent.com/janhieber/small_hifi/master/system_architecture.png)
 Edit ``system_architecture.xml`` on [draw.io](https://www.draw.io/)

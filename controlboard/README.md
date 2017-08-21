@@ -17,14 +17,15 @@ except we don't connect the external audio source PCBs on slave.
 
 # Checklist
 
-## PCB routing
+### PCB routing
 
 - [ ] STM32F7/H7
 - [ ] input board: BT audio
 - [ ] input board: analog audio
 - [ ] DAC + volume control
 
-## Power supply
+### Power supply
+
 We will need 3-5 V. So either we use a 5 V supply
 or maybe better a 7-9 V supply with linear regulators
 for the ICs.
@@ -38,12 +39,13 @@ would be power waste in stand-by mode.
 
 
 # Technical
-Input boards:
+
+### Input boards
 - Analog stereo input with 3.5 mm jack + good ADC
 - Bluetooth audio: [Bluegiga WT32i](https://www.silabs.com/products/wireless/bluetooth/bluetooth-classic-modules/wt32i-bluetooth-audio-module)
 - Small Linux board with WLAN could provide a Spotify client
 
-STM32H7 as DSP:
+### STM32H7/F7
 - Should handle the digital inputs
 - USB audio input
 - Acts as audio crossover for high and middle/low tone (BiQuad IIRs)
@@ -54,16 +56,20 @@ STM32H7 as DSP:
 - Switch on delay to charge caps
 - Temperature control
 
+### Out stage
 - DAC: [TI PCM5102](http://www.ti.com/lit/ds/symlink/pcm5101.pdf)
 - Volume control: [TI PGA2311](http://www.ti.com/lit/ds/symlink/pga2311.pdf)
 
-I think we don't need a display, because there is not much info to show.
-If we decide to use one, we could go with this: [Winstar OLED 64x32](http://www.winstar.com.tw/products/oled-module/graphic-oled-display/micro.html)
+### Nice to have
+This stuff is low prio!
 
-[https://www.hobbyhifiladen.de/aktivmodule-dsp/sure-electronics/?p=4](https://www.hobbyhifiladen.de/aktivmodule-dsp/sure-electronics/?p=4)
+Display: [Winstar OLED 64x32](http://www.winstar.com.tw/products/oled-module/graphic-oled-display/micro.html)  
+Gesture sensor: [APDS-9960](https://cdn.sparkfun.com/datasheets/Sensors/Proximity/apds9960.pdf)
+
 
 # Tools
 The board should be designed with KiCAD.
 
 # Notes
+[https://www.hobbyhifiladen.de/aktivmodule-dsp/sure-electronics/?p=4](https://www.hobbyhifiladen.de/aktivmodule-dsp/sure-electronics/?p=4)
 
