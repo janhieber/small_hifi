@@ -11,17 +11,17 @@ The speakers can be places on a desk besides the computer screen for example.
 There will be a master and a slave box.
 
 Master box:
-
-- High and middle tone speaker
-- 2 x Class D amp, for each speaker
-- Switching power supply
 - DSP crossover with analog/USB/BT input
+- 2 x class D amps, for each speaker one
+- Tweeter + mid-range driver
 
-Slave Box: Same as master box, but no DSP crossover.  
-It should have a two low level analog inputs feeding
-the amp directly. The master box provides the signal.
+Slave Box:  
+Same as master box, but no crossover and input stuff.  
+Master box provides the ready to use audio signal and
+a data link for slave via SPDIF.
 
-Master box should have a mono stand-alone mode.  
+Master box should run in mono mode when
+slave is not present.  
 
 ![system architecture](https://raw.githubusercontent.com/janhieber/small_hifi/master/system_architecture.png)
 Edit ``system_architecture.xml`` on [draw.io](https://www.draw.io/)
