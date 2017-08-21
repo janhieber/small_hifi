@@ -12,20 +12,20 @@ We use STM32CubeMX generated Makefile project
 and FreeRTOS.
 
 # Checklist
-[ ] USB audio
-[ ] remote control
-  [ ] IR
-  [ ] radio
-[ ] SPDIF link to slave
-  [ ] audio link with 2 channels
-  [ ] data link
-[ ] handle I2S input
-[ ] DSP stuff
-  [ ] crossover with BiQuad IIRs
-  [ ] equalizing
-[ ] control volume control IC
-[ ] switch on delay
-[ ] temperature control
+- [ ] USB audio
+- [ ] remote control
+  - [ ] IR
+  - [ ] radio
+- [ ] SPDIF link to slave
+  - [ ] audio link with 2 channels
+  - [ ] data link
+- [ ] handle I2S input
+- [ ] DSP stuff
+  - [ ] crossover with BiQuad IIRs
+  - [ ] equalizing
+- [ ] control volume control IC
+- [ ] switch on delay
+- [ ] temperature control
 
 # Notes
 
