@@ -15,7 +15,7 @@ in subfolder.
   - Could do some equalizing etc...
   - For analog volume control IC
   - Some runtime config of DSP
-  - Remote control IR/radio?
+  - Remote control IR/radio: [IRMP](https://github.com/svn2github/irmp)
   - Switch on delay to charge caps
   - Temperature control
 
