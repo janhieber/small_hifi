@@ -38,6 +38,17 @@ We try to use free tools when possible.
 - CAD: [FreeCAD](https://www.freecadweb.org/)
 - Drawings/charts: [draw.io](https://www.draw.io/)
 
+# Organisation
+When working on this project, most things may be done in masterbranche.  
+It is always the goal to have a working master.
+
+So for example, if you develop a new input board, you can do this on master.
+But if you decide to redesign a board or part of a board, make a branch
+for it and merge it to master when its finished and proven. If you redesign
+the power supply of the controlboard, make a branch "controlboard-powersupply".
+
+If you are tired of merging in master you can always make a branche for yourself
+and merge your work into master when finshed.
 
 # Contributing
 We have some good knowledge on making this real, but of course we don't know anything
