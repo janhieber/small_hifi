@@ -78,6 +78,10 @@ Gesture sensor: [APDS-9960](https://cdn.sparkfun.com/datasheets/Sensors/Proximit
 # Tools
 The board should be designed with KiCAD.
 
+KiCAD howtos: [http://kicad.txplore.com/?cat=1](http://kicad.txplore.com/?cat=1)
+- [Create parts](http://kicad.txplore.com/?p=96): This is the schematic part, has nothing to do with the footprint.
+- [Create footprints](http://kicad.txplore.com/?p=111): Footprint and part is matches by pin numbers.
+
 # Notes
 [https://www.hobbyhifiladen.de/aktivmodule-dsp/sure-electronics/?p=4](https://www.hobbyhifiladen.de/aktivmodule-dsp/sure-electronics/?p=4)
 
