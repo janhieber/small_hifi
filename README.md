@@ -27,9 +27,18 @@ slave is not present.
 Edit ``system_architecture.xml`` on [draw.io](https://www.draw.io/)
 
 # Technical
-- [Mainboard](controlboard/)
-- [Class D amplifier](amplifier/)
+- [Controlboard](controlboard/)
+  - Small high quality power supply
+  - All input electronics
+  - STM32 controller
+  - DAC and volume control
+- [Amplifier](amplifier/)
+  - High power (switching?) supply
+  - Class D amplifier
 - [Box](box/)
+  - Mid-range driver
+  - Tweeter
+  - Chassis
 
 # Tools
 We try to use free tools when possible.
