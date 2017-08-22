@@ -41,8 +41,7 @@ would be power waste in stand-by mode.
 # Technical
 
 The input boards will have a unique connector, so
-we can plug in the cards we need.
-
+we can plug in the cards we need.  
 Signals on the connector: GND, I2S, I2C, SPI, GPIOs, UART, supply from trafo.
 
 ### power supply
@@ -51,11 +50,11 @@ Transformator 6V/12V [FP12-950](http://www.mouser.com/ds/2/410/media-1068242.pdf
 ### Input boards
 - Analog stereo input with 3.5 mm jack + good ADC
 - Bluetooth audio: [Bluegiga WT32i](https://www.silabs.com/products/wireless/bluetooth/bluetooth-classic-modules/wt32i-bluetooth-audio-module)
+- USB audio: [CP2615](https://www.silabs.com/documents/public/data-sheets/cp2615-datasheet.pdf)
 - Small Linux board with WLAN could provide a Spotify client
 
 ### STM32 (only STM32F412ZG/STM32F412VE have 5xI2S)
 - Should handle the digital inputs
-- USB audio input
 - Acts as audio crossover for high and middle/low tone (BiQuad IIRs)
 - Could do some equalizing etc...
 - For analog volume control IC
