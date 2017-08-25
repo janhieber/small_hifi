@@ -89,6 +89,7 @@ For GPIOs a board can use I2C port expander
 - Temperature control
 
 ### Out stage
+Design files in [out_dac](out_dac)
 - DAC: [TI PCM5102](http://www.ti.com/lit/ds/symlink/pcm5101.pdf)
 - Volume control: [TI PGA2311](http://www.ti.com/lit/ds/symlink/pga2311.pdf)
 
