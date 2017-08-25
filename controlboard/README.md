@@ -1,15 +1,14 @@
 <!-- vim-markdown-toc GFM -->
 * [About](#about)
 * [Checklist](#checklist)
-        * [PCB routing](#pcb-routing)
-        * [Power supply](#power-supply)
+  * [PCB routing](#pcb-routing)
 * [Technical](#technical)
-        * [power supply](#power-supply-1)
-        * [Input boards](#input-boards)
-        * [STM32 (only STM32F412ZG/STM32F412VE have 5xI2S)](#stm32-only-stm32f412zgstm32f412ve-have-5xi2s)
-        * [Out stage](#out-stage)
-        * [Nice to have](#nice-to-have)
-        * [I2C bus addresses](#i2c-bus-addresses)
+  * [power supply](#power-supply)
+  * [Input boards](#input-boards)
+  * [STM32F7](#stm32f7)
+  * [Out stage](#out-stage)
+  * [Nice to have](#nice-to-have)
+  * [I2C bus addresses](#i2c-bus-addresses)
 * [Tools](#tools)
 * [Notes](#notes)
 
@@ -42,8 +41,9 @@ except we don't connect the external audio source PCBs on slave.
 - [ ] input board: analog audio
 - [ ] DAC + volume control
 
-### Power supply
+# Technical
 
+### power supply
 We will need 3-5 V. So either we use a 5 V supply
 or maybe better a 7-9 V supply with linear regulators
 for the ICs.
@@ -55,10 +55,6 @@ Additionaly we may use a small switching supply to
 make a power on circuit. Always running the transformator
 would be power waste in stand-by mode.
 
-
-# Technical
-
-### power supply
 Transformator 6V/12V [FP12-950](http://www.mouser.com/ds/2/410/media-1068242.pdf)
 
 ### Input boards
@@ -82,8 +78,8 @@ For GPIOs a board can use I2C port expander
 - USB audio: [CP2615](https://www.silabs.com/documents/public/data-sheets/cp2615-datasheet.pdf)
 - Small Linux board with WLAN could provide a Spotify client
 
-### STM32 (only STM32F412ZG/STM32F412VE have 5xI2S)
-- Should handle the digital inputs
+### STM32F7
+- Should handle the digital inputs (I2S switch)
 - Acts as audio crossover for high and middle/low tone (BiQuad IIRs)
 - Could do some equalizing etc...
 - For analog volume control IC
