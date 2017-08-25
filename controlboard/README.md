@@ -1,3 +1,21 @@
+<!-- vim-markdown-toc GFM -->
+* [About](#about)
+* [Checklist](#checklist)
+        * [PCB routing](#pcb-routing)
+        * [Power supply](#power-supply)
+* [Technical](#technical)
+        * [power supply](#power-supply-1)
+        * [Input boards](#input-boards)
+        * [STM32 (only STM32F412ZG/STM32F412VE have 5xI2S)](#stm32-only-stm32f412zgstm32f412ve-have-5xi2s)
+        * [Out stage](#out-stage)
+        * [Nice to have](#nice-to-have)
+        * [I2C bus addresses](#i2c-bus-addresses)
+* [Tools](#tools)
+* [Notes](#notes)
+
+<!-- vim-markdown-toc -->
+
+
 # About
 This is the DSP/control board.  
 
@@ -40,14 +58,25 @@ would be power waste in stand-by mode.
 
 # Technical
 
-The input boards will have a unique connector, so
-we can plug in the cards we need.  
-Signals on the connector: GND, I2S, I2C, SPI, GPIOs, UART, supply from trafo.
-
 ### power supply
 Transformator 6V/12V [FP12-950](http://www.mouser.com/ds/2/410/media-1068242.pdf)
 
 ### Input boards
+The input boards will have a unique connector, so
+we can plug in the cards we need.  
+Signals on the connector: GND, I2S, I2C, SPI, GPIO, UART, supply from trafo.
+
+| Signal | Explanation                  |
+|--------|------------------------------|
+| I2S    | audio to STM32               |
+| I2C    | for communication            |
+| SPI    | for communication            |
+| UART   | for communication            |
+| 1 GPIO | to switch power of the board |
+
+For GPIOs a board can use I2C port expander
+[PCF8574](http://www.ti.com/lit/ds/symlink/pcf8574.pdf)
+
 - Analog stereo input with 3.5 mm jack + good ADC
 - Bluetooth audio: [Bluegiga WT32i](https://www.silabs.com/products/wireless/bluetooth/bluetooth-classic-modules/wt32i-bluetooth-audio-module)
 - USB audio: [CP2615](https://www.silabs.com/documents/public/data-sheets/cp2615-datasheet.pdf)
@@ -73,6 +102,16 @@ This stuff is low prio!
 Display: [Winstar OLED 64x32](http://www.winstar.com.tw/products/oled-module/graphic-oled-display/micro.html)  
 Gesture sensor: [APDS-9960](https://cdn.sparkfun.com/datasheets/Sensors/Proximity/apds9960.pdf)
 
+### I2C bus addresses
+
+[I2C](http://www.ti.com/lit/ds/symlink/pcf8574.pdf) port expander has ``0100 xxx`` (0x21 - 0x27).
+
+| Address | Device           |
+|----------|-----------------|
+| 0x21 | Analog stereo input |
+| 0x22 | Bluetooth audio     |
+| 0x23 | USB audio           |
+| -    | Linux board         |
 
 # Tools
 The board should be designed with KiCAD.
