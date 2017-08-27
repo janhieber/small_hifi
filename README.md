@@ -1,4 +1,6 @@
 # About
+
+[![Join the chat at https://gitter.im/small_hifi/Lobby](https://badges.gitter.im/small_hifi/Lobby.svg)](https://gitter.im/small_hifi/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 This project is about creating a small HiFi audio system.
 
 We intend to build a two way stereo system (2 boxes, each 2 speakers)
