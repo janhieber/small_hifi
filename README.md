@@ -1,19 +1,17 @@
-# About
-
 [![Join the chat at https://gitter.im/small_hifi/Lobby](https://badges.gitter.im/small_hifi/Lobby.svg)](https://gitter.im/small_hifi/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+# About
 This project is about creating a small HiFi audio system.
 
 We intend to build a two way stereo system (2 boxes, each 2 speakers)
-with small size (about 20 cm height, 15 cm width and depth).
+with small size (front not bigger then DIN A4 paper).
 
-The systems purpose is providing good audio quality in small rooms.
+The systems purpose is providing good audio quality in small rooms.  
 The speakers can be places on a desk besides the computer screen for example.
 
 # System design and architecture
-There will be a master and a slave box.
-
 Master box:
-- DSP crossover with analog/USB/BT input
+- DSP audio crossover with various input cards
 - 2 x class D amps, for each speaker one
 - Tweeter + mid-range driver
 
@@ -30,13 +28,13 @@ Edit ``system_architecture.xml`` on [draw.io](https://www.draw.io/)
 
 # Technical
 - [Controlboard](controlboard/)
-  - Small high quality power supply
-  - All input electronics
-  - STM32 controller
+  - Input electronics (USB, BT, analog, ...)
+  - STM32 controller (for DSP and other stuff)
   - DAC and volume control
+  - Small high quality power supply
 - [Amplifier](amplifier/)
-  - High power (switching?) supply
   - Class D amplifier
+  - High power (switching?) supply
 - [Box](box/)
   - Mid-range driver
   - Tweeter
@@ -46,23 +44,21 @@ Edit ``system_architecture.xml`` on [draw.io](https://www.draw.io/)
 We try to use free tools when possible.
 
 - ECAD/EDA: [KiCAD](http://kicad-pcb.org/)
-- CAD: [FreeCAD](https://www.freecadweb.org/)
+- CAD: [FreeCAD](https://www.freecadweb.org/) or OpenSCAD
 - Drawings/charts: [draw.io](https://www.draw.io/)
 
-# Organisation
-When working on this project, most things may be done in masterbranche.  
-It is always the goal to have a working master.
+# Contributing
+Most small things may be done in master branche.  
+For change/redesign use a dedicated branch!
 
-So for example, if you develop a new input board, you can do this on master.
+Example, if you develop a new input board, you can do this on master.
 But if you decide to redesign a board or part of a board, make a branch
-for it and merge it to master when its finished and proven. If you redesign
-the power supply of the controlboard, make a branch "controlboard-powersupply".
+for it and merge it to master when its finished and proven.
 
-If you are tired of merging in master you can always make a branche for yourself
+If you are tired of merging in master you can always make a branch for yourself
 and merge your work into master when finshed.
 
-# Contributing
-We have some good knowledge on making this real, but of course we don't know anything
+We have some good knowledge on making this real, but of course we don't know everything
 and we don't want to spend years making this perfect. So if you want to contribute, feel
 free to contact us.
 
