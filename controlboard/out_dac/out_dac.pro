@@ -1,4 +1,4 @@
-update=Di 22 Aug 2017 17:40:19 CEST
+update=So 27 Aug 2017 21:28:39 CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -68,4 +68,4 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=/home/jan/small_hifi/controlboard/parts
+LibName30=/home/jan/small_hifi/controlboard/parts_controlboard
