@@ -11,7 +11,9 @@ designs and use them.
 
 Class D amp IC: [TI TPA3245](http://www.ti.com/lit/ds/symlink/tpa3245.pdf)
 
-
+Poer Supply: [Mean Well EPP-300-27](http://www.mouser.com/ds/2/260/r1835_3-1109476.pdf)  
+We also need 12V here, should take this from the other supply
+of control board maybe.
 
 # Tools
 The PCBs should be designed with KiCAD.
