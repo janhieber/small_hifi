@@ -44,6 +44,8 @@ except we don't connect the external audio source PCBs on slave.
 # Technical
 
 ### power supply
+Relais for high power supply: [G6DN-1A DC5](http://www.mouser.com/ds/2/307/en-g6dn-838135.pdf)
+
 We will need 3-5 V. So either we use a 5 V supply
 or maybe better a 7-9 V supply with linear regulators
 for the ICs.
