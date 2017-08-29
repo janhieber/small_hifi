@@ -59,6 +59,10 @@ would be power waste in stand-by mode.
 
 Transformator 6V/12V [FP12-950](http://www.mouser.com/ds/2/410/media-1068242.pdf)
 
+
+![PowerSupply](https://raw.githubusercontent.com/janhieber/small_hifi/master/controlboard/PowerSupply.png)
+Edit ``PowerSupply.xml`` on [draw.io](https://www.draw.io/)
+
 ### Input boards
 The input boards will have a unique connector, so
 we can plug in the cards we need.  
