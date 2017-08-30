@@ -96,8 +96,12 @@ For GPIOs a board can use I2C port expander
 
 ### Out stage
 Design files in [out_dac](out_dac)
-- DAC: [TI PCM5102](http://www.ti.com/lit/ds/symlink/pcm5101.pdf)
-- Volume control: [TI PGA2311](http://www.ti.com/lit/ds/symlink/pga2311.pdf)
+- DAC: [TI PCM5242](http://www.ti.com/lit/ds/symlink/pcm5242.pdf)
+- Volume control: ?
+
+Amp has differential inputs.  
+We switched to a DAC with differential outputs.  
+Now we need a volume control with differential in- and outputs.
 
 ### Nice to have
 This stuff is low prio!
