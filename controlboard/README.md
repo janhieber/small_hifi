@@ -97,7 +97,10 @@ For GPIOs a board can use I2C port expander
 ### Out stage
 Design files in [out_dac](out_dac)
 - DAC: [TI PCM5242](http://www.ti.com/lit/ds/symlink/pcm5242.pdf)
-- Volume control: ?
+- Volume control: 
+TBD: [X9C103](https://www.intersil.com/en/products/data-converters/digital-potentiometers--dcps-/dcps/X9C103.html#documents) 
+see: https://www.diy-hifi-forum.eu/forum/showthread.php?14609-Analoge-Lautst%E4rkeregelung-f%FCr-nach-m-DSP-oder-Universal-Vorverst%E4r
+
 
 Amp has differential inputs.  
 We switched to a DAC with differential outputs.  
