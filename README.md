@@ -43,7 +43,7 @@ Edit ``system_architecture.xml`` on [draw.io](https://www.draw.io/)
 # Tools
 We try to use free tools when possible.
 
-- ECAD/EDA: [KiCAD](http://kicad-pcb.org/)
+- ECAD/EDA: [KiCAD](http://kicad.org/)
 - CAD: [FreeCAD](https://www.freecadweb.org/) or OpenSCAD
 - Drawings/charts: [draw.io](https://www.draw.io/)
 
